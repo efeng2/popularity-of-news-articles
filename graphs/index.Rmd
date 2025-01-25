@@ -1,0 +1,51 @@
+## Exploratory Data Analysis
+
+### Introduction
+	As most of the world transitions to the digital age, an increasing amount of people spend more time on social media and get important information such as current events from these platforms. We want to analyze which of these platforms are favored by the public when they get their current events, and which kinds of news stories and sources are the most popular amongst the people in hopes of capturing the interests of the public about the world and where they get the information in technological times.
+	
+### Dataset Description
+	The dataset that we will be using is collected by Nuno Moniz and Lu´ıs Torgo, from the University of Porto. The dataset has information on the popularity of new articles on different social media platforms on four different news topics, and the sentiment scores of each of the news articles. The dataset is collected within a period of eight months by parsing through the queries of official media sources: Google News and Yahoo News, taking the top 100 popular news topics and then the popularity of each news piece on each social media platform is captured by looking at the number of times the news item is shared or liked. 
+ 
+### Summary of the Dataset
+```{r chart_source, echo=FALSE}
+source('summary.R')
+print(summary_info)
+````
+
+In order to capture the trend of which articles and on which platforms catch the attention of the people more, we will evaluate 5 aspects of the data, the most popular article topic, the most popular news source, and the average sentiment value of the article headline, the highest popularity score an article has reached, and the most popular platform that attracted viewer attention.
+
+- First, we want to analyze which topic is the most popular. Because the dataset collects the 100 most popular news articles from google news and yahoo news, the one that appears the most times would be the most popular news topic. The most popular topic is Economy, appearing a total of 33928 times.
+
+- Second, we want to analyze which source the most popular articles are from. The most popular source is Bloomberg, appearing a total of 1732 times.
+
+- Sentiment value is a scale of how appealing the headline is to the viewer. The average sentiment headline of the news articles is -0.027493046.
+
+- We want to calculate which platform reached the highest popularity score because we can see which platform reached peak performance in flow. Facebook has the highest popularity score an article has reached, reaching a popularity score of 49211.
+
+- We want to see which platform has the highest cumulative popularity score because then we can find out which platform performed the best overall. Facebook has the highest sum of popularity of news items, with a popularity score of 10549185.
+ 
+ 
+### Aggregate Table 
+```{r chart_source, echo=FALSE}
+aggregate_table <- source('table.R')
+print(aggregate_table)
+````
+
+ 
+ 
+### Visualization Charts
+
+```{r chart_source, echo=FALSE}
+plt <- source('chart_source.R')
+print(plt)
+````
+
+```{r chart_source, echo=FALSE}
+plt <- source('')
+print(plt)
+````
+
+```{r chart_graph_date, echo=FALSE}
+plt <- source('graph_date.R')
+print(plt)
+````
