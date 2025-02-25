@@ -1,72 +1,54 @@
-### Interested domain: Social Media
+# Popularity of News Articles and Their Sources
+**Authors**: Emily Feng, Shufan Wang, Muyun Xiao
 
-Why are you interested in this field/domain?
-- We are interested in analyzing the data of social media use especially in the field of their ties to the aspects of daily life such as expressing opinion and expressing oneself because social media is used a lot by individuals in modern times. Not only subject to entertainment, social media is also a good way to build one’s influence and reputation for work and study. An increasing amount of people spend more time on social media and get important information such as current events from these platforms.
+# Problem Statement
+As most of the world transitions to the digital age, an increasing amount of people spend more time on social media and get important information such as current events from these platforms. We want to analyze which of these platforms are favored by the public when they get their current events, and which kinds of news stories and sources are the most popular amongst the people in hopes of capturing the interests of the public about the world and where they get the information in technological times.
 
-What other examples of data driven projects have you found related to this domain (share at least 3)?
-- [Predicting Depression Levels Using Social Media Posts.](https://ieeexplore.ieee.org/abstract/document/7940253) The researcher analyzed the negativity in posts on social media networks based on routine posts on the platforms.
-- [Survey that asks places that US adults get their news from.](https://www.pewresearch.org/journalism/2021/01/12/news-use-across-social-media-platforms-in-2020/) The majority of US adults get their news from social media sites at least sometimes.
-- [Analysis on things that twitter users put on their bios.](https://www.pewresearch.org/fact-tank/2022/05/05/jobs-hobbies-top-the-list-of-things-u-s-adults-put-in-their-twitter-profiles-references-to-politics-relatively-rare/) Adult twitter users often put jobs, hobbies, and family relationships on their bios.
+Our analysis explores which social media platform is a preferred source people go to in order to get their news, and what sort of news topics these people favor in order to paint a picture of the trend of the preferences of the modern world.
 
-What data-driven questions do you hope to answer about this domain (share at least 3)?
-1. How does COVID-19 affect the sociological and psychological aspects of our life via social media?
-2. How does the use of different social media platforms impact news popularity and spread?
-3. How do people on social media view large scale events such as the pandemic?
- 
-We strongly suggest that you complete this section first, discussing what you might want to learn, then move forward with the data discovery process.
+The dataset that we used is a collection of the most popular 100 articles from Google news and Yahoo news, perfect for exploring the most popular topics and platforms that society likes in the modern time.
 
-### Finding Data
+# Domain of Interest: Social Media
 
-We are lucky enough to live in a time when there is lots of publicly available data made possible by governments, journalists, academics, and companies. In this section, you will identify and download at least 3 sources of data related to your domain of interest described above (into a folder you create called data/). You won't be required to use all of these sources, but it will give you practice discovering data. If your data is made available through a Web API, you don't need to download it. For each source of data, provide the following information:
- 
-**Dataset 1:**
+The focus of our interest lies in analyzing social media usage, particularly how it reflects various aspects of daily life such as self-expression and opinion sharing. Social media is widely used by individuals in modern society, serving not only as a source of entertainment but also as a platform for building personal influence and reputation, both in professional and academic contexts. As more people rely on social media for a variety of purposes, including staying informed about current events, understanding its impact becomes increasingly important.
 
-Where did you download the data (e.g., a web URL)?
-- https://www.kaggle.com/datasets/georgesaavedra/news-popularity-in-social-media-platforms
- 
-How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
-- It was collected by Nuno Moniz and Lu´ıs Torgo, from the University of Porto. The dataset has information on the popularity of new articles on different social media platforms on four different big news topics. The dataset is collected within a period of eight months by parsing through the queries of official media sources: Google News and Yahoo News, taking the top 100 news topics and then the popularity of each news piece on each social media platform is captured by looking at the number of times the news item is shared or liked. 
- 
-How many observations (rows) are in your data?
-- There are 93239 observations.
- 
-How many features (columns) are in the data?
-- There are 11 features.
- 
-What questions (from above) can be answered using the data in this dataset?
-- It can be used to answer “How does the use of different social media platforms impact news popularity and spread?” because the dataset evaluates the popularity of news being shared on different social media platforms.
- 
-**Dataset 2:**
+Several data-driven projects have explored various facets of social media, including:
 
-Where did you download the data (e.g., a web URL)?
-- https://www.kaggle.com/datasets/seungguini/youtube-comments-for-covid19-related-videos
- 
-How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
-- This dataset was collected by Seunggun, who is a computer science student from New York University, using youcos, a python application that collects youtube comments by the YouTube v3 API. This dataset stores all comments from COVID-related videos on YouTube, and shows how people feel about the COVID-related videos. 
- 
-How many observations (rows) are in your data?
-- There are 41589 observations.
- 
-How many features (columns) are in the data?
-- There are 14 features in this dataset.
- 
-What questions (from above) can be answered using the data in this dataset?
-- Since youtube is the largest used social media platform, it can be used to answer “How do people on social media view large scale events such as the pandemic?”
- 
-**Dataset 3:**
+1. **Predicting Depression Levels Using Social Media Posts**: This project analyzed the negativity in social media posts to predict users' mental health.
+2. **Survey on US Adults' News Sources**: A study found that a significant portion of US adults get their news from social media platforms, highlighting their role in news dissemination.
+3. **Twitter User Bio Analysis**: An analysis of Twitter bios revealed that adults commonly share information about their jobs, hobbies, and family relationships.
 
-Where did you download the data (e.g., a web URL)?
-- https://www.kaggle.com/datasets/gpreda/all-covid19-vaccines-tweets
- 
-How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
-- The data is collected by Gabriel Preda, a data scientist at Endava, using a Python package called tweepy that can access Twitter API, collecting twice a day using the vaccine names as search terms in order to locate tweets that are relevant to covid vaccines. The data set consists of these tweets that talk about the seven types of covid vaccines.
+## Research Questions
 
-How many observations (rows) are in your data?
-- There are 228207 observations.
+Our main research questions focus on understanding how social media influences social and psychological dynamics, especially in relation to major events. Specific questions we aim to answer include:
 
-How many features (columns) are in the data?
-- There are 16 features.
+1. How has COVID-19 influenced the sociological and psychological aspects of life through social media?
+2. What role do different social media platforms play in news popularity and its spread?
+3. How do social media users perceive large-scale events, such as a pandemic?
 
-What questions (from above) can be answered using the data in this dataset?
-- It can be used to answer “How does COVID-19 affect the sociological and psychological aspects of our life via social media” as the dataset is collected from comments in tweets that reflects people’s attitude towards vaccination in the global pandemic.
+---
 
+## Finding Data
+
+We live in a time where vast amounts of publicly available data are accessible due to contributions from governments, journalists, and academics. For this project, we have identified three datasets related to social media, which we can use to explore the questions mentioned above.
+
+### Dataset 1: News Popularity on Social Media
+- **Source**: [Kaggle: News Popularity in Social Media Platforms](https://www.kaggle.com/datasets/georgesaavedra/news-popularity-in-social-media-platforms)
+- **Data Collection**: This dataset was collected by Nuno Moniz and Luís Torgo from the University of Porto. It contains information about how popular news articles are across different social media platforms, based on their number of shares and likes. Data was gathered over eight months by scraping queries from Google News and Yahoo News.
+- **Observations**: 93,239
+- **Features**: 11
+- **Applicable Research Question**: This dataset can help answer the question: "How does the use of different social media platforms impact news popularity and spread?"
+
+### Dataset 2: YouTube Comments on COVID-19 Videos
+- **Source**: [Kaggle: YouTube Comments for COVID-19 Videos](https://www.kaggle.com/datasets/seungguini/youtube-comments-for-covid19-related-videos)
+- **Data Collection**: Collected by Seunggun, a computer science student at New York University, using the YouTube v3 API. This dataset includes comments from COVID-19 related YouTube videos, providing insights into public sentiment on the pandemic.
+- **Observations**: 41,589
+- **Features**: 14
+- **Applicable Research Question**: This dataset is useful for answering the question: "How do people on social media view large-scale events such as the pandemic?"
+
+### Dataset 3: Tweets on COVID-19 Vaccines
+- **Source**: [Kaggle: All COVID-19 Vaccines Tweets](https://www.kaggle.com/datasets/gpreda/all-covid19-vaccines-tweets)
+- **Data Collection**: Collected by Gabriel Preda using the Tweepy package to access the Twitter API. The dataset consists of tweets related to COVID-19 vaccines, gathered twice daily with vaccine names as search terms.
+- **Observations**: 228,207
+- **Features**: 16
+- **Applicable Research Question**: This dataset is helpful in answering the question: "How does COVID-19 affect the sociological and psychological aspects of our life via social media?"
